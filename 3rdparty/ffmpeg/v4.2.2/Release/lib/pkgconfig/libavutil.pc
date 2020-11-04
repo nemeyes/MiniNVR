@@ -1,0 +1,14 @@
+prefix=../release
+exec_prefix=${prefix}
+libdir=../release/lib
+includedir=../release/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil user32.lib bcrypt.lib
+Libs.private: 
+Cflags: -I${includedir}
